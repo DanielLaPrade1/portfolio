@@ -14,7 +14,7 @@ const HomeContactButton = ({ targetRef }: Props) => {
 
   return (
     <Box
-      padding="10%"
+      padding={{ sm: "3%", md: "6%", lg: "8%", xl: "12%" }}
       display="flex"
       alignItems="center"
       justifyContent="center"
@@ -22,16 +22,16 @@ const HomeContactButton = ({ targetRef }: Props) => {
       <Button
         onClick={handleClick}
         bgGradient="linear(to-r, #9bafd9, #103783)"
-        transition=" transform 0.5s"
+        transition=" transform 0.35s"
         borderRadius="40px"
         _hover={{
           bgGradient: "linear(to-r, #103783, #9bafd9)",
-          transform: "scale(1.15)",
+          transform: "scale(1.1)",
           borderRadius: "200px",
         }}
-        width={{ sm: "200px", md: "200px", lg: "300px", xl: "400px" }}
+        width={{ sm: "150px", md: "200px", lg: "300px", xl: "400px" }}
         height={{ sm: "40px", md: "45px", lg: "52px", xl: "70px" }}
-        fontSize={{ sm: "20px", md: "20px", lg: "30px", xl: "40px" }}
+        fontSize={{ sm: "15px", md: "20px", lg: "30px", xl: "40px" }}
         rightIcon={<MdOutlineEmail />}
       >
         Contact Me

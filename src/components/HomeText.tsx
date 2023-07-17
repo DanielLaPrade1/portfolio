@@ -1,29 +1,29 @@
-import { Box, Flex, Stack, Text } from "@chakra-ui/react";
+import { Box, Stack, Text } from "@chakra-ui/react";
 
 const HomeText = () => {
   return (
-    <Box
-      boxSize="100%"
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-    >
+    <Box alignItems="center" justifyContent="center" margin="20px">
       <Stack>
         <Text
           bgGradient="linear(to-l, green.200, pink.500)"
           bgClip="text"
-          fontSize={{ sm: "4xl", md: "5xl", lg: "5xl", xl: "6xl" }}
+          fontSize={{ sm: "3xl", md: "4xl", lg: "5xl", xl: "6xl" }}
+          noOfLines={1}
         >
           Hello, My Name is
         </Text>
         <Text
-          fontSize={{ sm: "5xl", md: "6xl", lg: "6xl", xl: "7xl" }}
+          fontSize={{ sm: "4xl", md: "5xl", lg: "6xl", xl: "7xl" }}
           bgGradient="linear(to-r, #84ffc9, #aab2ff, #eca0ff)"
           bgClip="text"
+          noOfLines={1}
         >
-          Daniel LaPrade
+          Daniel LaPrade.
         </Text>
-        <Text fontSize={{ sm: "2xl", md: "3xl", lg: "3xl", xl: "4xl" }}>
+        <Text
+          fontSize={{ sm: "xl", md: "2xl", lg: "3xl", xl: "4xl" }}
+          noOfLines={1}
+        >
           Software Engineer
         </Text>
       </Stack>

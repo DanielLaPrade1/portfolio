@@ -5,25 +5,29 @@ import HomeText from "./components/HomeText";
 import NavBar from "./components/NavBar";
 import { useRef } from "react";
 import HomeContactButton from "./components/HomeContactButton";
+import SkillsList from "./components/SkillsList";
+import "./styles/App.css";
 
 const App = () => {
+  //Page Refs
   const homePage = useRef<HTMLDivElement>(null);
   const aboutPage = useRef<HTMLDivElement>(null);
   const projectPage = useRef<HTMLDivElement>(null);
   const contactPage = useRef<HTMLDivElement>(null);
 
+  //Page Dividers
   let divider = (
     <Box
       height="3.5vh"
       bgGradient="linear(black, #08203e)"
       position="relative"
       zIndex="0"
-      borderRadius="5px"
+      borderBottomLeftRadius="30px"
     />
   );
 
   return (
-    <div className="custom-scroll">
+    <div className="wrapper">
       <Grid
         templateRows="1fr"
         templateAreas='"nav" "content"'
@@ -56,7 +60,7 @@ const App = () => {
             <Flex
               align="center"
               justify="center"
-              height="70%"
+              height="80%"
               flexDirection="row"
             >
               <HomeText />
@@ -69,7 +73,8 @@ const App = () => {
             bgGradient="linear(to-r, #0e1c26, #2a454b, #294861)"
           >
             {divider}
-            About
+
+            <SkillsList />
           </Box>
           <Box
             ref={projectPage}
@@ -79,7 +84,6 @@ const App = () => {
             {divider}
             Projects
           </Box>
-          {divider}
           <Box
             ref={contactPage}
             height="95vh"
@@ -87,6 +91,7 @@ const App = () => {
             backgroundImage={jmuQuad}
             backgroundSize="cover"
           >
+            {divider}
             <Text>Contact Me</Text>
           </Box>
         </GridItem>
