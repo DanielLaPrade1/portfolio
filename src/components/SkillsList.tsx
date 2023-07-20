@@ -1,4 +1,4 @@
-import { Box, List, ListItem, Text } from "@chakra-ui/react";
+import { Box, List, Text } from "@chakra-ui/react";
 import {
   BiLogoJavascript,
   BiLogoJava,
@@ -10,12 +10,13 @@ import {
 import { SiMysql, SiChakraui } from "react-icons/si";
 import "../styles/App.css";
 import { useInView } from "react-intersection-observer";
+import SkillListItem from "./SkillListItem";
 
 const SkillsList = () => {
   const { ref: skillsListRef, inView: skillsListVisible } = useInView();
 
   return (
-    <Box width="140px">
+    <Box width="140px" margin="20px">
       <List spacing={1} marginLeft="10px">
         <Text
           ref={skillsListRef}
@@ -29,110 +30,38 @@ const SkillsList = () => {
         >
           Skills
         </Text>
-        <ListItem
-          ref={skillsListRef}
-          className={
-            skillsListVisible
-              ? "skillHidden skillShow skill"
-              : "skillHidden skill"
-          }
-          display="flex"
-          alignItems="center"
-        >
-          <BiLogoJavascript color="yellow" size="50px" />
-          <Text marginLeft="10px">JavaScript</Text>
-        </ListItem>
-        <ListItem
-          ref={skillsListRef}
-          className={
-            skillsListVisible
-              ? "skillHidden skillShow skill"
-              : "skillHidden skill"
-          }
-          display="flex"
-          alignItems="center"
-        >
-          <BiLogoJava size="50px" color="#f89820" />
-          <Text marginLeft="10px">Java</Text>
-        </ListItem>
-        <ListItem
-          ref={skillsListRef}
-          className={
-            skillsListVisible
-              ? "skillHidden skillShow skill"
-              : "skillHidden skill"
-          }
-          display="flex"
-          alignItems="center"
-        >
-          <BiLogoReact size="50px" color="#61DBFB" />
-          <Text marginLeft="10px">React</Text>
-        </ListItem>
-        <ListItem
-          ref={skillsListRef}
-          className={
-            skillsListVisible
-              ? "skillHidden skillShow skill"
-              : "skillHidden skill"
-          }
-          display="flex"
-          alignItems="center"
-        >
-          <BiLogoHtml5 size="50px" color="#E34C26" />
-          <Text marginLeft="10px">HTML</Text>
-        </ListItem>
-        <ListItem
-          ref={skillsListRef}
-          className={
-            skillsListVisible
-              ? "skillHidden skillShow skill"
-              : "skillHidden skill"
-          }
-          display="flex"
-          alignItems="center"
-        >
-          <BiLogoCss3 size="50px" color="#264de4" />
-          <Text marginLeft="10px">CSS</Text>
-        </ListItem>
-        <ListItem
-          ref={skillsListRef}
-          className={
-            skillsListVisible
-              ? "skillHidden skillShow skill"
-              : "skillHidden skill"
-          }
-          display="flex"
-          alignItems="center"
-        >
-          <BiLogoPython size="50px" color="#FFD43B" />
-          <Text marginLeft="10px">Python</Text>
-        </ListItem>
-        <ListItem
-          ref={skillsListRef}
-          className={
-            skillsListVisible
-              ? "skillHidden skillShow skill"
-              : "skillHidden skill"
-          }
-          display="flex"
-          alignItems="center"
-        >
-          <SiMysql size="50px" color="#f29111" />
-          <Text marginLeft="10px">MySQL</Text>
-        </ListItem>
-        <ListItem
-          ref={skillsListRef}
-          className={
-            skillsListVisible
-              ? "skillHidden skillShow skill"
-              : "skillHidden skill"
-          }
-          display="flex"
-          alignItems="center"
-        >
-          <SiChakraui size="50px" color="#5accc9" />
-          <Text marginLeft="10px">Chakra UI</Text>
-        </ListItem>
+        <SkillListItem
+          logo={<BiLogoJavascript color="yellow" size="50px" />}
+          skillName="JavaScript"
+        />
+        <SkillListItem
+          logo={<BiLogoJava size="50px" color="#f89820" />}
+          skillName="Java"
+        />
+        <SkillListItem
+          logo={<BiLogoPython size="50px" color="#FFD43B" />}
+          skillName="Python"
+        />
+        <SkillListItem
+          logo={<BiLogoReact size="50px" color="#61DBFB" />}
+          skillName="React"
+        />
+        <SkillListItem
+          logo={<BiLogoHtml5 size="50px" color="#E34C26" />}
+          skillName="HTML"
+        />
+        <SkillListItem
+          logo={<BiLogoCss3 size="50px" color="#264de4" />}
+          skillName="CSS"
+        />
+        <SkillListItem
+          logo={<SiMysql size="50px" color="#f29111" />}
+          skillName="MySQL"
+        />
+        <SkillListItem
+          logo={<SiChakraui size="50px" color="#5accc9" />}
+          skillName="Chakra UI"
+        />
       </List>
     </Box>
   );

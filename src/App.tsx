@@ -7,6 +7,8 @@ import { useRef } from "react";
 import HomeContactButton from "./components/HomeContactButton";
 import SkillsList from "./components/SkillsList";
 import "./styles/App.css";
+import PersonalBio from "./components/PersonalBio";
+import ProjectGrid from "./components/ProjectGrid";
 
 const App = () => {
   //Page Refs
@@ -16,15 +18,6 @@ const App = () => {
   const contactPage = useRef<HTMLDivElement>(null);
 
   //Page Dividers
-  let divider = (
-    <Box
-      height="3.5vh"
-      bgGradient="linear(black, #08203e)"
-      position="relative"
-      zIndex="0"
-      borderBottomLeftRadius="30px"
-    />
-  );
 
   return (
     <div className="wrapper">
@@ -51,17 +44,12 @@ const App = () => {
           />
         </GridItem>
         <GridItem area="content" position="relative">
-          <Box
-            ref={homePage}
-            height="100vh"
-            paddingY="10%"
-            backgroundImage={techBackground}
-          >
+          <Box ref={homePage} height="100vh" backgroundImage={techBackground}>
             <Flex
-              align="center"
+              direction="column"
               justify="center"
+              alignItems="center"
               height="80%"
-              flexDirection="row"
             >
               <HomeText />
               <HomeContactButton targetRef={contactPage} />
@@ -72,26 +60,43 @@ const App = () => {
             height="100vh"
             bgGradient="linear(to-r, #0e1c26, #2a454b, #294861)"
           >
-            {divider}
-
-            <SkillsList />
+            <Box
+              height="3.5vh"
+              bgGradient="linear(black, #0d1922)"
+              position="relative"
+              borderBottomRadius="50%"
+            />
+            <Flex height="80%" justify="space-around">
+              <PersonalBio />
+              <SkillsList />
+            </Flex>
           </Box>
           <Box
             ref={projectPage}
             height="100vh"
             bgGradient="linear(to-l, #08203e, #557c93)"
           >
-            {divider}
-            Projects
+            <Box
+              height="3.5vh"
+              bgGradient="linear(to-r, #0e1c26, #2a454b, #294861)"
+              position="relative"
+              borderBottomRadius="10%"
+            />
+            <ProjectGrid />
           </Box>
           <Box
             ref={contactPage}
-            height="95vh"
+            height="100vh"
             backgroundColor="grey"
             backgroundImage={jmuQuad}
             backgroundSize="cover"
           >
-            {divider}
+            <Box
+              height="3.5vh"
+              bgGradient="linear(to-l, #08203e, #557c93)"
+              position="relative"
+              borderBottomRadius="50%"
+            />
             <Text>Contact Me</Text>
           </Box>
         </GridItem>
