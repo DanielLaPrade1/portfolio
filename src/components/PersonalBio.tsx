@@ -3,30 +3,45 @@ import ProfilePhoto from "../assets/ProfilePhotoProf.webp";
 
 const PersonalBio = () => {
   return (
-    <Flex flexDirection="column" marginTop="50px" alignItems="center">
-      <Image
-        src={ProfilePhoto}
-        height={{ sm: "225px", md: "300px", lg: "375px", xl: "400px" }}
-        width={{ sm: "325px", md: "400px", lg: "575px", xl: "550px" }}
-        marginBottom="10px"
-        borderRadius="10px"
-      />
+    <Flex
+      flexDirection="column"
+      marginTop="50px"
+      alignItems="center"
+      marginLeft="10px"
+    >
+      <Image src={ProfilePhoto} width="70%" maxH="280px" borderRadius="10px" />
       <Text
-        maxW={{ sm: "300px", md: "400px", lg: "500px", xl: "600px" }}
-        fontSize={{ sm: "14px", md: "14px", lg: "17px", xl: "20px" }}
+        margin="20px"
+        maxW={{
+          base: "350px",
+          sm: "400px",
+          md: "400px",
+          lg: "500px",
+          xl: "600px",
+        }}
+        fontSize={{
+          base: "12px",
+          md: "12px",
+          lg: "15px",
+          xl: "17px",
+        }}
         textAlign="center"
+        color="lightgray"
+        borderRadius="10px"
+        boxShadow="1px 8px 10px rgba(0, 0, 0, 0.1)"
       >
-        من المهم جدًا أن ينتبه العميل لعملية اكتشاف الدهون. هذه الرحلة ممتعة لا
-        سيما أنه لا شيء ، سواء كان مباركًا للمتهمين الحاليين أو حزنًا ومن أين لا
-        يعرفون الأوقات ، ويتركونها كأنها لمتعة الوقت. مرحباً يجب أن يتبع الألم
-        نفسه من خلال المطور. هناك عدد قليل جدا ولدت من عقل المشتكين ، لكن أوقات
-        التساهل الكبير ستزال من مذاب يكره الألم ، لأن الخطأ يجب أن يفترضه الألم
-        مراتمن المهم جدًا أن ينتبه العميل لعملية اكتشاف الدهون. هذه الرحلة ممتعة
-        لا سيما أنه لا شيء ، سواء كان مباركًا للمتهمين الحاليين أو حزنًا ومن أين
-        لا يعرفون الأوقات ، ويتركونها كأنها لمتعة الوقت. مرحباً يجب أن يتبع
-        الألم نفسه من خلال المطور. هناك عدد قليل جدا ولدت من عقل المشتكين ، لكن
-        أوقات التساهل الكبير ستزال من مذاب يكره الألم ، لأن الخطأ يجب أن يفترضه
-        الألم مرات
+        I'm Daniel LaPrade, a junior enrolled in the computer science program at
+        James Madison University. I find myself immersed in the world of
+        software engineering since I have a passion for design and a love of
+        solving complex problems. As a software engineer, I approach challenges
+        with a tenacious spirit, constantly seeking innovative solutions to
+        propel projects forward. My academic journey has honed my technical
+        skills and instilled a deep appreciation in me for collaborative
+        problem-solving. I am currently seeking an internship opportunity to
+        further my growth as a software engineer, be it in the realms of
+        front-end or back-end development. Diligent, adaptable, and
+        detail-oriented, I am eager to contribute my skills to a dynamic and
+        forward-thinking team.
       </Text>
     </Flex>
   );

@@ -1,4 +1,4 @@
-import { Box, Button } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 import { MdOutlineEmail } from "react-icons/md";
 
 interface Props {
@@ -21,12 +21,12 @@ const HomeContactButton = ({ targetRef }: Props) => {
       borderRadius="40px"
       _hover={{
         bgGradient: "linear(to-r, #103783, #9bafd9)",
-        transform: "scale(1.1)",
+        transform: "scale(1.05)",
         borderRadius: "200px",
       }}
-      width={{ sm: "150px", md: "200px", lg: "300px", xl: "400px" }}
-      height={{ sm: "40px", md: "45px", lg: "52px", xl: "70px" }}
-      fontSize={{ sm: "15px", md: "20px", lg: "30px", xl: "40px" }}
+      width={{ base: "150px", md: "200px", lg: "300px", xl: "400px" }}
+      height={{ base: "40px", md: "45px", lg: "52px", xl: "70px" }}
+      fontSize={{ base: "15px", md: "20px", lg: "30px", xl: "40px" }}
       rightIcon={<MdOutlineEmail />}
     >
       Contact Me

@@ -7,14 +7,14 @@ const ProjectGrid = () => {
   return (
     <Center flexDirection="column">
       <Text
-        fontSize="30px"
-        padding={{ sm: "10px", md: "10px", lg: "40px", xl: "40px" }}
+        fontSize={{ base: "30px", md: "40px", lg: "50px", xl: "60px" }}
+        padding={{ base: "10px", md: "10px", lg: "60px", xl: "60px" }}
       >
         Projects
       </Text>
       <SimpleGrid
-        columns={{ sm: 2, md: 2, lg: 4, xl: 4 }}
-        padding="20px"
+        columns={{ base: 2, sm: 2, md: 2, lg: 4, xl: 4 }}
+        padding="10px"
         spacing="15px"
       >
         <ProjectCard image={KiLowBites} projectName="KiLowBites" />

@@ -6,6 +6,7 @@ import {
   Image,
   Stack,
 } from "@chakra-ui/react";
+import { useInView } from "react-intersection-observer";
 
 interface Props {
   image: string;
@@ -13,9 +14,17 @@ interface Props {
 }
 
 const ProjectCard = ({ image, projectName }: Props) => {
+  const { ref: projectCardRef, inView: projectCardVisible } = useInView();
+
   return (
     <Card
-      maxW="300px"
+      ref={projectCardRef}
+      className={
+        projectCardVisible
+          ? "projectHidden projectShow project"
+          : "projectHidden project"
+      }
+      maxW="275px"
       borderRadius="15px"
       bgGradient="linear(black, #08203e, black)"
     >
