@@ -12,10 +12,13 @@ const AboutPageLayout = () => {
                "git git"`,
         sm: `"pb pb"
         "skill git"`,
-        md: `"pb skill"
+        md: `"pb pb"
+        "skill git"`,
+        lg: `"pb skill"
                "git skill"`,
       }}
-      gap={4}
+      width="100vw"
+      gap={3}
     >
       <GridItem area="pb">
         <Center>

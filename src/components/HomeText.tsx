@@ -13,7 +13,7 @@ const HomeText = () => {
         className="typewriter-effect"
         bgGradient="linear(to-l, green.200, pink.500)"
         bgClip="text"
-        fontSize={{ base: "4xl", md: "5xl", lg: "6xl", xl: "7xl" }}
+        fontSize={{ base: "4xl", sm: "5xl", md: "5xl", lg: "6xl", xl: "7xl" }}
         noOfLines={1}
       >
         Hello, My Name is
@@ -22,7 +22,7 @@ const HomeText = () => {
       <Text
         align="center"
         className="typewriter-effect"
-        fontSize={{ base: "5xl", md: "6xl", lg: "7xl", xl: "8xl" }}
+        fontSize={{ base: "5xl", sm: "6xl", md: "6xl", lg: "7xl", xl: "8xl" }}
         bgGradient="linear(to-r, #84ffc9, #aab2ff, #eca0ff)"
         bgClip="text"
         noOfLines={1}
@@ -32,7 +32,7 @@ const HomeText = () => {
       <Text
         align="center"
         className="fade-in-home"
-        fontSize={{ base: "2xl", md: "3xl", lg: "4xl", xl: "5xl" }}
+        fontSize={{ base: "2xl", sm: "3xl", md: "3xl", lg: "4xl", xl: "5xl" }}
         noOfLines={1}
       >
         Software Engineer

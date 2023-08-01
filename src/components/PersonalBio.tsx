@@ -1,5 +1,5 @@
 import { Flex, Image, Text } from "@chakra-ui/react";
-import ProfilePhoto from "../assets/ProfilePhotoProf.webp";
+import ProfilePhoto from "../assets/pWideTree.webp";
 
 const PersonalBio = () => {
   return (
@@ -8,9 +8,17 @@ const PersonalBio = () => {
       marginTop="50px"
       alignItems="center"
       marginLeft="10px"
+      padding="20px"
     >
-      <Image src={ProfilePhoto} width="70%" maxH="280px" borderRadius="10px" />
+      <Image
+        src={ProfilePhoto}
+        width="70%"
+        maxH="280px"
+        borderRadius="10px"
+        opacity="90%"
+      />
       <Text
+        userSelect="none"
         margin="20px"
         maxW={{
           base: "350px",

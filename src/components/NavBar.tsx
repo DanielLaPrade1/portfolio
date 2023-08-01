@@ -11,7 +11,7 @@ interface Props {
 
 const NavBar = ({ homeRef, aboutRef, projectRef, contactRef }: Props) => {
   return (
-    <HStack justifyContent="space-between" padding="10px">
+    <HStack justifyContent="space-between" padding="10px" width="98vw">
       <Image src={DNL} boxSize="30px"></Image>
       <ButtonGroup spacing="2">
         <NavButton targetRef={homeRef}>Home</NavButton>

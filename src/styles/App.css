@@ -1,24 +1,23 @@
 .wrapper {
+    width: 100vw;
     height: 100vh;
-    overflow-y: auto;
     overflow-x: hidden;
-    perspective: 10px;
+    transform-style: preserve-3d;
 }
+/* Home page animations/effects */
 
-
-/* Home page animations*/
 @keyframes typing {
     from {
-      width: 0;
-      opacity: 0;
-      transform-origin: left;
+        width: 0;
+        opacity: 0;
+        transform-origin: left;
     }
     to {
-      width: 100%;
-      opacity: 1;
-      transform-origin: left;
+        width: 100%;
+        opacity: 1;
+        transform-origin: left;
     }
-  }
+}
   
 .typewriter-effect {
     white-space: nowrap;
@@ -99,7 +98,7 @@
     animation-fill-mode: forwards;
 }
 
-/* Project page animations*/
+/* Project page animations */
 @keyframes come-left {
     from {
         opacity: 0;
@@ -131,4 +130,25 @@
 .projectShow {
     animation: come-left 0.7s;
     animation-fill-mode: forwards;
+}
+
+/* Project page styles*/
+.contact-input {
+    width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: transparent;
+    transition: border-color 0.3s;
+}
+  
+.contact-input:focus {
+    outline: none;
+    box-shadow: 0 0 2px #b22b9c;
+}
+  
+.contact-input:hover {
+    border-color: lightpink; 
 }

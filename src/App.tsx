@@ -1,14 +1,14 @@
-import { Grid, GridItem, Box, Text, Flex } from "@chakra-ui/react";
+import { Grid, GridItem, Box, Center } from "@chakra-ui/react";
 import jmuQuad from "./assets/JmuQuad1.webp";
 import techBackground from "./assets/TechBackgroundGif.webp";
-import HomeText from "./components/HomeText";
 import NavBar from "./components/NavBar";
 import { useRef } from "react";
-import HomeContactButton from "./components/HomeContactButton";
 import "./styles/App.css";
-import ProjectGrid from "./components/ProjectGrid";
+import ProjectGrid from "./layouts/ProjectGrid";
 import AboutPageLayout from "./layouts/AboutPageLayout";
-
+import ContactPageLayout from "./layouts/ContactPageLayout";
+import LineArtBackground from "./assets/pCloseTreeAi.png";
+import HomePageLayout from "./layouts/HomePageLayout";
 const App = () => {
   //Page Refs
   const homePage = useRef<HTMLDivElement>(null);
@@ -42,28 +42,32 @@ const App = () => {
         <GridItem
           area="content"
           position="relative"
+          className="content"
           backgroundImage={techBackground}
         >
-          <Box ref={homePage} height="900px">
-            <Flex
-              direction="column"
-              justify="center"
-              alignItems="center"
-              height="90%"
-            >
-              <HomeText />
-              <HomeContactButton targetRef={contactPage} />
-            </Flex>
+          <Box
+            ref={homePage}
+            height="825px"
+            backgroundImage={LineArtBackground}
+            backgroundSize={{
+              base: "100vw",
+              sm: "90vw",
+              md: "80vw",
+              lg: "50vw",
+              xl: "50vw",
+            }}
+            backgroundPosition="left bottom"
+            backgroundRepeat="no-repeat"
+          >
+            <HomePageLayout targetRef={contactPage} />
           </Box>
+
           <Box
             ref={aboutPage}
             bgGradient="linear(to-r, #0e1c26, #2a454b, #294861)"
             height={{
               base: "1000px",
               sm: "900px",
-              md: "800px",
-              lg: "800px",
-              xl: "800px",
             }}
           >
             <Box
@@ -88,9 +92,9 @@ const App = () => {
             <ProjectGrid />
           </Box>
           <Box
-            ref={contactPage}
-            height="900px"
+            height="850px"
             backgroundColor="grey"
+            ref={contactPage}
             backgroundImage={jmuQuad}
             backgroundSize="cover"
           >
@@ -100,7 +104,7 @@ const App = () => {
               position="relative"
               borderBottomRadius="20%"
             />
-            <Text>Contact Me</Text>
+            <ContactPageLayout />
           </Box>
         </GridItem>
       </Grid>

@@ -7,7 +7,6 @@ const MySocials = () => {
       marginTop={{
         base: "20px",
         sm: "80px",
-        md: "10px",
         lg: "10px",
         xl: "10px",
       }}

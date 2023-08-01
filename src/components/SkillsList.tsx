@@ -17,7 +17,7 @@ const SkillsList = () => {
 
   return (
     <Grid
-      templateColumns={{ base: "repeat(3, 1fr)", md: "1fr" }}
+      templateColumns={{ base: "repeat(3, 1fr)", lg: "1fr" }}
       gap={1}
       marginTop={{ base: "10px", md: "30px" }}
     >
