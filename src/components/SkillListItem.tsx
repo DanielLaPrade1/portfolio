@@ -23,8 +23,16 @@ const SkillListItem = ({ logo, skillName }: Props) => {
     >
       {logo}
       <Text
-        marginLeft={{ sm: "5px", md: "8px", lg: "12px", xl: "15px" }}
-        fontSize={{ sm: "9px", md: "12px", lg: "15px", xl: "20px" }}
+        marginLeft={{ base: "1px", sm: "3px", md: "5px", lg: "7px", xl: "9px" }}
+        fontSize={{
+          base: "10px",
+          sm: "11px",
+          md: "13px",
+          lg: "17px",
+          xl: "20px",
+        }}
+        bgGradient="linear(to-l, white, lightgrey)"
+        bgClip="text"
       >
         {skillName}
       </Text>

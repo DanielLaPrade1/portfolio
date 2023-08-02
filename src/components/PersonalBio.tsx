@@ -13,9 +13,10 @@ const PersonalBio = () => {
       <Image
         src={ProfilePhoto}
         width="70%"
-        maxH="280px"
+        maxH="300px"
         borderRadius="10px"
         opacity="90%"
+        border="4px double #0e1c26"
       />
       <Text
         userSelect="none"

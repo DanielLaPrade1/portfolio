@@ -4,9 +4,9 @@ import "../styles/App.css";
 const ContactForm = () => {
   return (
     <Box
-      bgGradient="linear(to-r, #294861, #703BE7)"
+      bgGradient="linear(to-l, #08203e, #557c93)"
       borderRadius="20px"
-      opacity="95%"
+      opacity="99%"
       padding="10px"
     >
       <form>

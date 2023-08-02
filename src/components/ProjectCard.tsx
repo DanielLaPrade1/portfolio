@@ -26,9 +26,10 @@ const ProjectCard = ({ image, projectName }: Props) => {
       }
       maxW="275px"
       borderRadius="15px"
+      maxH="300px"
       bgGradient="linear(black, #08203e, black)"
     >
-      <Image src={image} borderTopRadius="15px" />
+      <Image src={image} borderTopRadius="15px" maxH="50%" />
       <Stack
         mt="6"
         spacing="3"

@@ -1,14 +1,14 @@
-import { Grid, GridItem, Box, Center } from "@chakra-ui/react";
+import { Grid, GridItem, Box } from "@chakra-ui/react";
 import jmuQuad from "./assets/JmuQuad1.webp";
 import techBackground from "./assets/TechBackgroundGif.webp";
 import NavBar from "./components/NavBar";
 import { useRef } from "react";
 import "./styles/App.css";
-import ProjectGrid from "./layouts/ProjectGrid";
-import AboutPageLayout from "./layouts/AboutPageLayout";
-import ContactPageLayout from "./layouts/ContactPageLayout";
+import ProjectGrid from "./components/layouts/ProjectGrid";
+import AboutPageLayout from "./components/layouts/AboutPageLayout";
+import ContactPageLayout from "./components/layouts/ContactPageLayout";
 import LineArtBackground from "./assets/pCloseTreeAi.png";
-import HomePageLayout from "./layouts/HomePageLayout";
+import HomePageLayout from "./components/layouts/HomePageLayout";
 const App = () => {
   //Page Refs
   const homePage = useRef<HTMLDivElement>(null);
@@ -58,6 +58,7 @@ const App = () => {
             }}
             backgroundPosition="left bottom"
             backgroundRepeat="no-repeat"
+            width="100vw"
           >
             <HomePageLayout targetRef={contactPage} />
           </Box>
@@ -80,19 +81,19 @@ const App = () => {
           </Box>
           <Box
             ref={projectPage}
-            height="900px"
+            height="850px"
             bgGradient="linear(to-l, #08203e, #557c93)"
           >
             <Box
               height="20px"
               bgGradient="linear(to-r, #0e1c26, #2a454b, #294861)"
               position="relative"
-              borderBottomRadius="10%"
+              borderBottomRadius="90%"
             />
             <ProjectGrid />
           </Box>
           <Box
-            height="850px"
+            height="900px"
             backgroundColor="grey"
             ref={contactPage}
             backgroundImage={jmuQuad}

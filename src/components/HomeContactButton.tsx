@@ -24,9 +24,9 @@ const HomeContactButton = ({ targetRef }: Props) => {
         transform: "scale(1.05)",
         borderRadius: "200px",
       }}
-      width={{ base: "150px", md: "200px", lg: "300px", xl: "400px" }}
-      height={{ base: "40px", md: "45px", lg: "52px", xl: "70px" }}
-      fontSize={{ base: "15px", md: "20px", lg: "30px", xl: "40px" }}
+      width={{ base: "225px", md: "300px", lg: "375px", xl: "500px" }}
+      height={{ base: "60px", md: "67.5px", lg: "78px", xl: "92px" }}
+      fontSize={{ base: "22.5px", md: "30px", lg: "45px", xl: "55px" }}
       rightIcon={<MdOutlineEmail />}
     >
       Contact Me

@@ -3,9 +3,9 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 const ContactMeText = () => {
   return (
     <Box
-      bgGradient="linear(to-r, #294861, #703BE7)"
+      bgGradient="linear(to-l, #08203e, #557c93)"
       borderRadius="20px"
-      opacity="95%"
+      opacity="99%"
       padding="10px"
       height={{ base: "400px", lg: "600px" }}
       width={{ base: "500px", lg: "450px" }}

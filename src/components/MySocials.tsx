@@ -23,16 +23,26 @@ const MySocials = () => {
           <Icon as={AiFillGithub} opacity="80%" color="black" boxSize="70px" />
         </Button>
       </Link>
-      <Button
-        marginRight="10px"
-        borderRadius="5%"
-        boxSize="51px"
-        bgGradient="linear(to-r, white, grey)"
-        color="white"
-        _hover={{ bgGradient: "linear(to-r, grey, white)" }}
+      <Link
+        href={"https://www.linkedin.com/in/daniel-laprade-a94491286/"}
+        isExternal
       >
-        <Icon as={AiFillLinkedin} opacity="80%" color="black" boxSize="70px" />
-      </Button>
+        <Button
+          marginRight="10px"
+          borderRadius="5%"
+          boxSize="51px"
+          bgGradient="linear(to-r, white, grey)"
+          color="white"
+          _hover={{ bgGradient: "linear(to-r, grey, white)" }}
+        >
+          <Icon
+            as={AiFillLinkedin}
+            opacity="80%"
+            color="#0A66C2"
+            boxSize="70px"
+          />
+        </Button>
+      </Link>
     </Center>
   );
 };
