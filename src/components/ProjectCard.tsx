@@ -27,12 +27,16 @@ const ProjectCard = ({ image, projectName, githubLink, demoLink }: Props) => {
           ? "projectHidden projectShow project"
           : "projectHidden project"
       }
-      maxW="275px"
+      maxW={{ base: "250px", sm: "275px" }}
       borderRadius="15px"
-      maxH="300px"
+      maxH={{ base: "230px", sm: "300px" }}
       bgGradient="linear(black, #08203e, black)"
     >
-      <Image src={image} borderTopRadius="15px" maxH="50%" />
+      <Image
+        src={image}
+        borderTopRadius="15px"
+        maxH={{ base: "35%", sm: "50%" }}
+      />
       <Stack
         mt="6"
         spacing="3"

@@ -62,7 +62,7 @@ const ProjectGrid = () => {
       </SimpleGrid>
       <Flex
         alignItems="center"
-        marginTop={{ base: "20px", md: "20px", lg: "100px" }}
+        paddingTop={{ base: "20px", md: "20px", lg: "100px" }}
         borderRadius="10px"
         boxShadow="1px 8px 10px rgba(0, 0, 0, 0.1)"
       >
