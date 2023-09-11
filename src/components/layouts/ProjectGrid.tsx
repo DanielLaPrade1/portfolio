@@ -32,8 +32,10 @@ const ProjectGrid = () => {
         Projects
       </Text>
       <SimpleGrid
-        columns={{ base: 2, sm: 2, md: 2, lg: 4, xl: 4 }}
-        spacing="4%"
+        columns={{ base: 2, lg: 4, xl: 4 }}
+        spacingX="4%"
+        spacingY={{ base: "10px", sm: "4%" }}
+        margin="5px"
       >
         <ProjectCard
           image={KiLowBites}
@@ -62,7 +64,8 @@ const ProjectGrid = () => {
       </SimpleGrid>
       <Flex
         alignItems="center"
-        paddingTop={{ base: "20px", md: "20px", lg: "100px" }}
+        padding={{ base: "5px", md: "40px", lg: "30px" }}
+        marginTop="30px"
         borderRadius="10px"
         boxShadow="1px 8px 10px rgba(0, 0, 0, 0.1)"
       >

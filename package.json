@@ -10,14 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.7.1",
+    "@chakra-ui/react": "^2.8.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/dm-serif-text": "^5.0.5",
     "@fontsource/open-sans": "^5.0.5",
     "@fontsource/raleway": "^5.0.5",
     "@react-spring/parallax": "^9.7.3",
-    "framer-motion": "^10.12.21",
+    "framer-motion": "^10.16.4",
     "google-fonts-webpack-plugin": "^0.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
