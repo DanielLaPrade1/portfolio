@@ -1,4 +1,4 @@
-import { Box, Center, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import HomeContactButton from "../HomeContactButton";
 import HomeText from "../HomeText";
 
