@@ -14,7 +14,11 @@ const NavButton = ({ targetRef, children }: Props) => {
   };
 
   return (
-    <Button size={{ sm: "xs", md: "sm" }} onClick={handleClick}>
+    <Button
+      size={{ sm: "xs", md: "sm" }}
+      onClick={handleClick}
+      colorScheme="gray"
+    >
       {children}
     </Button>
   );
