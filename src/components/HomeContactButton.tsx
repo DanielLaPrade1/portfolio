@@ -16,6 +16,7 @@ const HomeContactButton = ({ targetRef }: Props) => {
     <Button
       onClick={handleClick}
       margin="20px"
+      color="white"
       bgGradient="linear(to-r, #9bafd9, #103783)"
       transition=" transform 0.35s"
       borderRadius="40px"

@@ -84,7 +84,7 @@ const ContactForm = () => {
         />
       </form>
 
-      <Button margin="20px" type="submit" onClick={handleSubmit}>
+      <Button margin="20px" color="white" type="submit" onClick={handleSubmit}>
         Submit
       </Button>
     </Box>
