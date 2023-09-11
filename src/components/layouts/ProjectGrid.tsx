@@ -19,8 +19,9 @@ const ProjectGrid = () => {
       flexDirection="column"
       alignItems="center"
       width="100vw"
-      maxH="100%"
-      padding="20px"
+      maxH="100vh"
+      padding="10px"
+      spacing="2"
     >
       <Text
         userSelect="none"
@@ -30,7 +31,7 @@ const ProjectGrid = () => {
 
           lg: "60px",
         }}
-        marginBottom="60px"
+        marginBottom="30px"
         borderBottom="4px solid grey"
         borderRadius="4px"
         color="lightgray"
@@ -39,11 +40,10 @@ const ProjectGrid = () => {
       </Text>
       <SimpleGrid
         columns={{ base: 2, lg: 4, xl: 4 }}
-        spacingX="5%"
-        spacingY={{ base: "10px", sm: "4%" }}
+        spacing="5"
         margin="5px"
-        width="90%"
-        height="50%"
+        width="80%"
+        marginBottom="30px"
       >
         <ProjectCard
           image={KiLowBites}
@@ -73,7 +73,6 @@ const ProjectGrid = () => {
       <Flex
         alignItems="center"
         padding={{ base: "5px", md: "40px", lg: "30px" }}
-        marginTop="30px"
         borderRadius="10px"
         boxShadow="1px 8px 10px rgba(0, 0, 0, 0.1)"
       >

@@ -85,10 +85,7 @@ const App = () => {
           <Box
             scrollSnapAlign="start"
             ref={projectPage}
-            height={{
-              base: "1000px",
-              sm: "950px",
-            }}
+            height="1000px"
             bgGradient="linear(to-l, #08203e, #557c93)"
           >
             <Box
