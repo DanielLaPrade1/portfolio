@@ -33,9 +33,7 @@ const ProjectGrid = () => {
       </Text>
       <SimpleGrid
         columns={{ base: 2, sm: 2, md: 2, lg: 4, xl: 4 }}
-        spacing="20px"
-        marginLeft="20px"
-        marginRight="20px"
+        spacing="4%"
       >
         <ProjectCard
           image={KiLowBites}

@@ -33,6 +33,7 @@ const HomeText = () => {
         align="center"
         className="fade-in-home"
         fontSize={{ base: "2xl", sm: "3xl", md: "3xl", lg: "4xl", xl: "5xl" }}
+        color="white"
         noOfLines={1}
       >
         Software Engineer
