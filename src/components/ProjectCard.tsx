@@ -32,11 +32,11 @@ const ProjectCard = ({ image, projectName, githubLink, demoLink }: Props) => {
         ref={projectCardRef}
         borderRadius="15px"
         bgGradient="linear(black, #08203e, black)"
-        maxH="45vh"
+        h={{ base: "35vh", sm: "40vh" }}
       >
-        <Image src={image} borderTopRadius="15px" maxH="40%" />
+        <Image src={image} borderTopRadius="15px" maxH="50%" />
         <Stack mt="4" display="flex" flexDirection="column" alignItems="center">
-          <Heading size="md" color="white">
+          <Heading size="md" color="white" margin="3px">
             {projectName}
           </Heading>
         </Stack>

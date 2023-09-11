@@ -22,7 +22,7 @@ const HomeText = () => {
       <Text
         align="center"
         className="typewriter-effect"
-        fontSize={{ base: "5xl", sm: "6xl", md: "6xl", lg: "7xl", xl: "8xl" }}
+        fontSize={{ base: "4xl", sm: "6xl", md: "6xl", lg: "7xl", xl: "8xl" }}
         bgGradient="linear(to-r, #84ffc9, #aab2ff, #eca0ff)"
         bgClip="text"
         noOfLines={1}

@@ -18,12 +18,14 @@
     }
 }
   
-.typewriter-effect {
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 1.5s linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
+@media (min-width: 700px) {
+    .typewriter-effect {
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 1.5s linear;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
 }
 
 .typewriter-effect:nth-child(2) {
@@ -41,12 +43,14 @@
     }
 }
 
+@media (min-width: 700px) {
 .fade-in-home {
     animation: fade-in 1.5s;
     opacity: 0;
     animation-delay: 3.5s;
     animation-fill-mode: forwards; 
-}
+    }
+}  
 
 /* About page animations*/
 @keyframes come-top {

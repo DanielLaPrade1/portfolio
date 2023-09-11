@@ -19,7 +19,7 @@ const ProjectGrid = () => {
       flexDirection="column"
       alignItems="center"
       width="100vw"
-      maxH="100vh"
+      height="100vh"
       padding="10px"
       spacing="2"
     >
