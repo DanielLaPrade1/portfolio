@@ -84,7 +84,13 @@ const ContactForm = () => {
         />
       </form>
 
-      <Button margin="20px" color="white" type="submit" onClick={handleSubmit}>
+      <Button
+        margin="20px"
+        bgGradient="linear(to-r, #aff2d8, #faae7b)"
+        color="gray.700"
+        type="submit"
+        onClick={handleSubmit}
+      >
         Submit
       </Button>
     </Box>
