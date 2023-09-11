@@ -17,7 +17,7 @@ const NavButton = ({ targetRef, children }: Props) => {
     <Button
       size={{ sm: "xs", md: "sm" }}
       onClick={handleClick}
-      colorScheme="gray"
+      bgGradient="linear(to-r, grey, #103783)"
     >
       {children}
     </Button>
