@@ -1,10 +1,10 @@
 import {
   Button,
-  Center,
   Flex,
   Icon,
   Link,
   SimpleGrid,
+  Stack,
   Text,
 } from "@chakra-ui/react";
 import ProjectCard from "../ProjectCard";
@@ -15,7 +15,13 @@ import { BsNewspaper } from "react-icons/bs";
 
 const ProjectGrid = () => {
   return (
-    <Center flexDirection="column" width="100vw" maxH="100%" padding="20px">
+    <Stack
+      flexDirection="column"
+      alignItems="center"
+      width="100vw"
+      maxH="100%"
+      padding="20px"
+    >
       <Text
         userSelect="none"
         fontSize={{
@@ -33,9 +39,11 @@ const ProjectGrid = () => {
       </Text>
       <SimpleGrid
         columns={{ base: 2, lg: 4, xl: 4 }}
-        spacingX="4%"
+        spacingX="5%"
         spacingY={{ base: "10px", sm: "4%" }}
         margin="5px"
+        width="90%"
+        height="50%"
       >
         <ProjectCard
           image={KiLowBites}
@@ -88,7 +96,7 @@ const ProjectGrid = () => {
           </Button>
         </Link>
       </Flex>
-    </Center>
+    </Stack>
   );
 };
 
