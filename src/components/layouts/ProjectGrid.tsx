@@ -8,8 +8,9 @@ import {
   Text,
 } from "@chakra-ui/react";
 import ProjectCard from "../ProjectCard";
-import techBackground from "../../assets/DNL-Logo.png";
-import KiLowBites from "../../assets/KiLowBitesLogo.png";
+import techBackground from "../../assets/DNL-Logo.webp";
+import KiLowBites from "../../assets/KiLowBitesLogo.webp";
+import MrKrabs from "../../assets/MrKrabs.webp";
 import { BsNewspaper } from "react-icons/bs";
 
 const ProjectGrid = () => {
@@ -36,10 +37,30 @@ const ProjectGrid = () => {
         marginLeft="20px"
         marginRight="20px"
       >
-        <ProjectCard image={KiLowBites} projectName="KiLowBites" />
-        <ProjectCard image={techBackground} projectName="Under Construction" />
-        <ProjectCard image={techBackground} projectName="Under Construction" />
-        <ProjectCard image={techBackground} projectName="Under Construction" />
+        <ProjectCard
+          image={KiLowBites}
+          projectName="KiLowBites"
+          githubLink="https://github.com/bernstdh/S23Team2E"
+          demoLink=""
+        />
+        <ProjectCard
+          image={MrKrabs}
+          projectName="Payment Tracker"
+          githubLink="https://github.com/DanielLaPrade1/PaymentTracker"
+          demoLink="https://payment-tracker-five.vercel.app/"
+        />
+        <ProjectCard
+          image={techBackground}
+          projectName="Under Construction"
+          githubLink=""
+          demoLink=""
+        />
+        <ProjectCard
+          image={techBackground}
+          projectName="Under Construction"
+          githubLink=""
+          demoLink=""
+        />
       </SimpleGrid>
       <Flex
         alignItems="center"

@@ -8,19 +8,16 @@ const ContactPageLayout = () => {
       templateAreas={{
         base: `"text text"
                 "form form"`,
-        md: `"text form"
+        lg: `"text form"
                "text form"`,
       }}
-      gap={10}
+      gap={4}
+      padding="10px"
       marginTop={{
         base: "30px",
-        sm: "40px",
-        md: "70px",
         lg: "100px",
-        xl: "140px",
       }}
       justifyContent="space-evenly"
-      padding="20px"
     >
       <GridItem area="text">
         <Center>
@@ -28,7 +25,7 @@ const ContactPageLayout = () => {
         </Center>
       </GridItem>
       <GridItem area="form">
-        <Center padding="60px">
+        <Center paddingTop={{ base: "60px", lg: "0px" }}>
           <ContactForm />
         </Center>
       </GridItem>

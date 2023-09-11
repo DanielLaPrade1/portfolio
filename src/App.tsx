@@ -7,8 +7,9 @@ import "./styles/App.css";
 import ProjectGrid from "./components/layouts/ProjectGrid";
 import AboutPageLayout from "./components/layouts/AboutPageLayout";
 import ContactPageLayout from "./components/layouts/ContactPageLayout";
-import LineArtBackground from "./assets/pCloseTreeAi.png";
+import LineArtBackground from "./assets/pCloseTreeAi.webp";
 import HomePageLayout from "./components/layouts/HomePageLayout";
+
 const App = () => {
   //Page Refs
   const homePage = useRef<HTMLDivElement>(null);
@@ -23,14 +24,14 @@ const App = () => {
       <Grid templateRows="1fr" templateAreas='"nav" "content"'>
         <GridItem
           area="nav"
-          height="45px"
+          height="50px"
           bgGradient="linear(black, #08203e, black)"
           position="sticky"
+          flexDirection="row"
           alignItems="center"
           top="0"
           zIndex="1"
           borderRadius="7px"
-          marginTop="4px"
         >
           <NavBar
             homeRef={homePage}
@@ -46,6 +47,7 @@ const App = () => {
           backgroundImage={techBackground}
         >
           <Box
+            scrollSnapAlign="start"
             ref={homePage}
             height="825px"
             backgroundImage={LineArtBackground}
@@ -64,6 +66,7 @@ const App = () => {
           </Box>
 
           <Box
+            scrollSnapAlign="start"
             ref={aboutPage}
             bgGradient="linear(to-r, #0e1c26, #2a454b, #294861)"
             height={{
@@ -80,8 +83,9 @@ const App = () => {
             <AboutPageLayout />
           </Box>
           <Box
+            scrollSnapAlign="start"
             ref={projectPage}
-            height="850px"
+            height="900px"
             bgGradient="linear(to-l, #08203e, #557c93)"
           >
             <Box
@@ -93,7 +97,8 @@ const App = () => {
             <ProjectGrid />
           </Box>
           <Box
-            height="900px"
+            scrollSnapAlign="start"
+            height={{ base: "1050px", lg: "850px" }}
             backgroundColor="grey"
             ref={contactPage}
             backgroundImage={jmuQuad}
