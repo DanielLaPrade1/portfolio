@@ -83,7 +83,12 @@ const ProjectGrid = () => {
         >
           My Resume:
         </Text>
-        <Link href={"https://github.com/DanielLaPrade1"} isExternal>
+        <Link
+          href={
+            "https://docs.google.com/document/d/1XQje_EPzpWeb5ShaIqSxcIhQIsfQeARUQrBAjS7fLaE/edit?usp=sharing"
+          }
+          isExternal
+        >
           <Button
             margin="20px"
             boxSize="60px"

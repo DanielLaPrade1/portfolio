@@ -26,6 +26,8 @@ const ContactForm = () => {
     setFormData({ fullName: "", email: "", message: "" });
   };
 
+  const buttonDisabled = true;
+
   return (
     <Box
       bgGradient="linear(to-l, #08203e, #557c93)"
@@ -89,6 +91,7 @@ const ContactForm = () => {
         bgGradient="linear(to-r, #aff2d8, #faae7b)"
         color="gray.700"
         type="submit"
+        isDisabled={buttonDisabled}
         onClick={handleSubmit}
       >
         Submit
