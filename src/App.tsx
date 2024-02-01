@@ -17,8 +17,6 @@ const App = () => {
   const projectPage = useRef<HTMLDivElement>(null);
   const contactPage = useRef<HTMLDivElement>(null);
 
-  //Page Dividers
-
   return (
     <div className="wrapper">
       <Grid templateRows="1fr" templateAreas='"nav" "content"'>
@@ -78,21 +76,21 @@ const App = () => {
               height="25px"
               bgGradient="linear(black, #0d1922)"
               position="relative"
-              borderBottomRadius="50%"
+              borderBottomLeftRadius="50%"
             />
             <AboutPageLayout />
           </Box>
           <Box
             scrollSnapAlign="start"
             ref={projectPage}
-            height="1000px"
+            height={{ base: "1000px", lg: "750px" }}
             bgGradient="linear(to-l, #08203e, #557c93)"
           >
             <Box
               height="20px"
               bgGradient="linear(to-r, #0e1c26, #2a454b, #294861)"
               position="relative"
-              borderBottomRadius="90%"
+              borderBottomRightRadius="200%"
             />
             <ProjectGrid />
           </Box>
@@ -108,7 +106,7 @@ const App = () => {
               height="20px"
               bgGradient="linear(to-l, #08203e, #557c93)"
               position="relative"
-              borderBottomRadius="20%"
+              borderBottomLeftRadius="90%"
             />
             <ContactPageLayout />
           </Box>

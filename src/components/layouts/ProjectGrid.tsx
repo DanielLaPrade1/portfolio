@@ -11,6 +11,7 @@ import ProjectCard from "../ProjectCard";
 import techBackground from "../../assets/DNL-Logo.webp";
 import KiLowBites from "../../assets/KiLowBitesLogo.webp";
 import MrKrabs from "../../assets/MrKrabs.webp";
+import GorillaChefTeam from "../../assets/GorillaChefTeam.jpg";
 import { BsNewspaper } from "react-icons/bs";
 
 const ProjectGrid = () => {
@@ -46,10 +47,10 @@ const ProjectGrid = () => {
         marginBottom="30px"
       >
         <ProjectCard
-          image={KiLowBites}
-          projectName="KiLowBites"
-          githubLink="https://github.com/bernstdh/S23Team2E"
-          demoLink=""
+          image={GorillaChefTeam}
+          projectName="Gorilla Pizza"
+          githubLink="https://github.com/DanielLaPrade1/GorillaPizza"
+          demoLink="https://gorilla-pizza.vercel.app/"
         />
         <ProjectCard
           image={MrKrabs}
@@ -58,21 +59,21 @@ const ProjectGrid = () => {
           demoLink="https://payment-tracker-five.vercel.app/"
         />
         <ProjectCard
-          image={techBackground}
-          projectName="Under Construction"
-          githubLink=""
+          image={KiLowBites}
+          projectName="KiLowBites"
+          githubLink="https://github.com/bernstdh/S23Team2E"
           demoLink=""
         />
         <ProjectCard
           image={techBackground}
-          projectName="Under Construction"
+          projectName="In-Progress"
           githubLink=""
           demoLink=""
         />
       </SimpleGrid>
       <Flex
         alignItems="center"
-        padding={{ base: "5px", md: "40px", lg: "30px" }}
+        padding={{ base: "5px", md: "10px" }}
         borderRadius="10px"
         boxShadow="1px 8px 10px rgba(0, 0, 0, 0.1)"
       >
