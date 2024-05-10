@@ -8,7 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import ProjectCard from "../ProjectCard";
-import techBackground from "../../assets/DNL-Logo.webp";
+//import techBackground from "../../assets/DNL-Logo.webp";
 import KiLowBites from "../../assets/KiLowBitesLogo.webp";
 import MrKrabs from "../../assets/MrKrabs.webp";
 import GorillaChefTeam from "../../assets/GorillaChefTeam.jpg";
