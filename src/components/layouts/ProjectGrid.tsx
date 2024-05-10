@@ -12,6 +12,7 @@ import techBackground from "../../assets/DNL-Logo.webp";
 import KiLowBites from "../../assets/KiLowBitesLogo.webp";
 import MrKrabs from "../../assets/MrKrabs.webp";
 import GorillaChefTeam from "../../assets/GorillaChefTeam.jpg";
+import SoundBored from "../../assets/soundbored.png";
 import { BsNewspaper } from "react-icons/bs";
 
 const ProjectGrid = () => {
@@ -47,6 +48,12 @@ const ProjectGrid = () => {
         marginBottom="30px"
       >
         <ProjectCard
+          image={SoundBored}
+          projectName="Sound-Bored"
+          githubLink="https://github.com/347S24/347-final-project-soundbored"
+          demoLink="https://soundbored-gr4pk.ondigitalocean.app/"
+        />
+        <ProjectCard
           image={GorillaChefTeam}
           projectName="Gorilla Pizza"
           githubLink="https://github.com/DanielLaPrade1/GorillaPizza"
@@ -62,12 +69,6 @@ const ProjectGrid = () => {
           image={KiLowBites}
           projectName="KiLowBites"
           githubLink="https://github.com/bernstdh/S23Team2E"
-          demoLink=""
-        />
-        <ProjectCard
-          image={techBackground}
-          projectName="In-Progress"
-          githubLink=""
           demoLink=""
         />
       </SimpleGrid>
