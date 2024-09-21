@@ -39,18 +39,13 @@ const PersonalBio = () => {
         borderRadius="10px"
         boxShadow="1px 8px 10px rgba(0, 0, 0, 0.1)"
       >
-        I'm Daniel LaPrade, a junior enrolled in the computer science program at
-        James Madison University. I find myself immersed in the world of
-        software engineering since I have a passion for design and a love of
-        solving complex problems. As a software engineer, I approach challenges
-        with a tenacious spirit, constantly seeking innovative solutions to
-        propel projects forward. My academic journey has honed my technical
-        skills and instilled a deep appreciation in me for collaborative
-        problem-solving. I am currently seeking an internship opportunity to
-        further my growth as a software engineer, be it in the realms of
-        front-end or back-end development. Diligent, adaptable, and
-        detail-oriented, I am eager to contribute my skills to a dynamic and
-        forward-thinking team.
+        I'm Daniel LaPrade, a senior enrolled in the computer science program at
+        James Madison University. My interests in engineering include data
+        science, front end development, and database management. When I'm not
+        looking at documentation or immersed in my code editor, I enjoy hiking
+        and playing poker with my friends. I really appreciate if you are still
+        reading this right now. Wherever I end up in life, I am determined to
+        adapt quickly and provide value through my work.
       </Text>
     </Flex>
   );
